@@ -1,0 +1,79 @@
+/* cardproduto-style.css */
+
+.produto-card {
+    width: 260px;
+    height: 420px;
+    /* Altura maior que a largura (formato retangular vertical) */
+    background: var(--color-surface, #FFFFFF);
+    border: 1px solid var(--color-border, #D1C9C4);
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(36, 30, 33, 0.08);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(36, 30, 33, 0.12);
+}
+
+.produto-imagem-container {
+    width: 100%;
+    height: 220px;
+    /* Espaço dedicado para a imagem */
+    overflow: hidden;
+}
+
+.produto-imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.produto-conteudo {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.produto-nome {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    /* Negrito */
+    font-size: 1.1rem;
+    color: var(--color-text, #241E21);
+    margin: 0 0 8px 0;
+
+    /* Limita o nome a no máximo 2 linhas para manter o padrão */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.produto-descricao {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: var(--color-text-muted, #6F6865);
+    /* Texto mais claro */
+    margin: 0 0 12px 0;
+
+    /* Limita a descrição a algumas linhas */
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.produto-preco {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-primary-light, #0649A9);
+    /* Cor azul solicitada */
+    margin: 0;
+}

@@ -1,0 +1,26 @@
+/* BotaoEntrar.css */
+.botao-entrar {
+    background-color: var(--color-success, #2E7D5B);
+    /* Cor azul padrão */
+    color: #FFFFFF;
+    /* Texto em branco */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    /* Bordas bem arredondadas */
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(6, 73, 169, 0.3);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.botao-entrar:hover {
+    background-color: var(--color-primary, #0E2656);
+    transform: translateY(-2px);
+}
+
+.botao-entrar:active {
+    transform: translateY(0);
+}

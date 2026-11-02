@@ -1,0 +1,11 @@
+/* produtos-grid.css */
+.produtos-grid {
+    display: grid;
+    /* Define colunas automáticas que se encaixam perfeitamente com a largura dos cards (~260px) */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    justify-items: center;
+    /* Centraliza os cards caso sobrem espaços vazios */
+    max-width: 1200px;
+    margin: 0 auto;
+}

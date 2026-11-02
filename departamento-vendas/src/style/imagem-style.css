@@ -1,0 +1,25 @@
+/* Container que ocupa a tela inteira e centraliza o conteúdo */
+.container-imagem-centralizada {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* Centraliza na horizontal */
+    align-items: center;
+    /* Centraliza na vertical */
+    background-color: #0E2656;
+    /* Opcional: cor de fundo para destacar */
+}
+
+/* Estilização da imagem */
+.imagem-destaque {
+    width: 600px;
+    height: 400px;
+    /* Mantém a proporção quadrada se desejar */
+    object-fit: cover;
+    /* Evita que a imagem distorça */
+    border-radius: 20px;
+    /* Bordas arredondadas (aumente ou diminua para ajustar) */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    /* Sombra elegante opcional */
+}
